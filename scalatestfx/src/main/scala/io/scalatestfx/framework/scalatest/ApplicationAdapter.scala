@@ -21,15 +21,15 @@ class ApplicationAdapter(
     val applicationFixture: ApplicationFixture
     ) extends javafx.application.Application {
 
-  override def init() {
+  override def init(): Unit = {
     applicationFixture.init()
   }
 
-  override def start(stage: Stage) {
+  override def start(stage: Stage): Unit = {
     applicationFixture.start(stage)
   }
 
-  override def stop() {
+  override def stop(): Unit = {
     applicationFixture.stop()
   }
 

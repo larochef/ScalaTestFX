@@ -15,7 +15,10 @@
  */
 package io.scalatestfx.testing
 
-import org.scalatest.FlatSpec
-import org.scalatest.Matchers
+import org.hamcrest.Matcher
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
+import org.testfx.matcher.base.GeneralMatchers
+import scalafx.scene.Node
 
-abstract class AcceptanceSpec extends FlatSpec with Matchers
+abstract class AcceptanceSpec extends AnyFlatSpec with Matchers
